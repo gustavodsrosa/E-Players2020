@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+/* Raiz do documento - Favorece reutilização de código */
+:root {
+
+    /* Definição de variável */
+    --background: #000;
+    --red: #c20000;
+    --blue: #001f70;
+    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+
+    --font: 'Titillium Web', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Chamando uma variável */
+body {
+    background-color: var(--background);
+    font-family: var(--font);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1199px) {
+    body {
+        background-color: var(--red);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        background-color: var(--blue);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: var(--red);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        background-color: var(--blue);
+    }
+}
+
