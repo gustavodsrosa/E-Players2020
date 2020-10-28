@@ -7,6 +7,7 @@
     --background: #000;
     --red: #c20000;
     --blue: #001f70;
+    --white: #fff;
     --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
 
     --font: 'Titillium Web', sans-serif;
@@ -61,7 +62,7 @@ body {
 }
 
 .menu a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -70,13 +71,87 @@ body {
 
 .menu a:hover {
     background-color: var(--red);
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 5px var(--white);
     text-decoration: underline;
 }
 
 #menu-bars {
     display: none;
 }
+
+/* Banner */
+
+.banner {
+    position: relative;
+}
+
+.banner-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(127, 255, 212, 0.39); */
+    position: absolute;
+    top: 0;
+}
+
+.banner-content {
+    height: 100%;
+    /* background-color: rgba(255, 235, 205, 0.384); */
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-text {
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+.banner-text h1 {
+    font-size: 5.62em;
+}
+
+.banner-text p {
+    font-size: 1.87em;
+}
+
+.banner-text a {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1.87em;
+    text-decoration: none;
+    background-color: var(--red);
+    padding: 0.5em 1.2em;
+    border-radius: 0.7em;
+    margin-top: 2em;
+}
+
+/* Links e Games */
+
+.games {
+    width: 100%;
+    height: 7.5em;
+    /* background-color: aquamarine; */
+}
+
+.games ul {
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 45px;
+    align-items: center;
+    margin-top: 1em
+}
+
+.games img {
+    width: 160px;
+}
+
 /* Media Queries */
 
 /* 1199 */
