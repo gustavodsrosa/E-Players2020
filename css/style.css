@@ -152,6 +152,11 @@ body {
     width: 160px;
 }
 
+.games ul a:hover img{
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
 /* Media Queries */
 
 /* 1199 */
