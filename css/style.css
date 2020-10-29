@@ -144,8 +144,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 45px;
+    justify-content: center;
     align-items: center;
-    margin-top: 1em
+    margin-top: 2.5em 
 }
 
 .games img {
@@ -155,6 +156,61 @@ body {
 .games ul a:hover img{
     transition: 0.5s;
     transform: scale(1.5);
+}
+
+/* About */
+
+.about {
+    height: 31.25em;
+    background-color: var(--blue);
+
+    position: relative;
+}
+
+.about-angulation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.angulation {
+    height: 24.125em;
+    width: 100%;
+    background-color: var(--background);
+    transform: skewY(-4deg);
+}
+
+.container-about {
+    color: var(--white);
+    position: absolute;
+    top: 0
+}
+
+.content-about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.text-about {
+    width: 50%;
+    text-align: justify;
+}
+
+.text-about h2 {
+    margin-bottom: 1em;
+    font-size: 2.1875em;
+}
+
+.text-about p {
+    font-size: 1.25em;
+}
+
+.content-about img {
+    max-width: 31.875em;
 }
 
 /* Media Queries */
