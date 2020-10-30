@@ -19,6 +19,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    
 }
 
 /* Chamando uma variável */
@@ -26,6 +27,7 @@ body {
     font-family: var(--font);
     font-size: 16px;
     background-color: var(--background);
+    overflow-x: hidden; 
 }
 
 .header-top {
@@ -71,7 +73,7 @@ body {
 
 .menu a:hover {
     background-color: var(--red);
-    text-shadow: 0 0 5px var(--white);
+    text-shadow: 0 0 20px var(--white);
     text-decoration: underline;
 }
 
@@ -94,6 +96,7 @@ body {
 }
 
 .banner-content {
+    height: 80%;
     height: 100%;
     /* background-color: rgba(255, 235, 205, 0.384); */
     margin: auto;
@@ -150,7 +153,7 @@ body {
 }
 
 .games img {
-    width: 160px;
+    width: 150px;
 }
 
 .games ul a:hover img{
@@ -213,7 +216,108 @@ body {
     max-width: 31.875em;
 }
 
+.games {
+    /* background-color: var(--red); */
+}
+
+.games-aovivo::after {
+    content: '';
+    border: solid 1px yellow;
+    height: 2em;
+    margin-left: 2em;
+}
+
+.games-aovivo, .games-embreve {
+    display: flex;
+    align-items: center;
+    font-size: 1.875em;
+    color: var(--white);
+}
+
+.games-aovivo h2, .games-embreve h2 {
+    text-transform: uppercase;
+    margin-right: 1em;
+    font-size: 1em;
+}
+
+.partida {
+    width: 9.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time1, .time2 {
+    display: flex;
+    /* background-color: var(--red); */
+    align-items: center;
+}
+
+.partida img {
+    width: 1.8em
+}
+
+.time1 img {
+    margin-left: 0.5em;
+}
+
+.time2 img {
+    margin-left: 0.5em;
+}
+
+/* Notícias */
+
+.noticias {
+    background-color:rgb(23, 23, 27);
+}
+
+.noticias h2 {
+    color: var(--white);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.noticia1 img, .noticia2 img, .noticia3 img, .noticia4 img, .noticia5 img, .noticia6 img{
+    width: 14.8125em;
+}
+
+.noticia1 p, .noticia2 p, .noticia3 p, .noticia4 p, .noticia5 p, .noticia6 p{
+    width: 14.8125em;
+    color: var(--white);
+    padding: 2em;
+    text-align: justify;
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%)
+    
+}
+
+.boxes {
+    display: flex;
+    height: 50%;
+    background: unset;
+}
+
+.boxes-2 {
+    display: flex;
+    height: 50%;
+    background: unset;
+}
+
+.boxes , .boxes-2 {
+    gap: 65px;
+}
+
+/* Terminar parte de partidas ao vivo e rodapé */
+
+
+
 /* Media Queries */
+
+/* 
+@media screen and (max-width: 1366px) {
+    body {
+        width: 100%
+    }
+} */
 
 /* 1199 */
 @media screen and (max-width: 74.93em) {
@@ -234,4 +338,6 @@ body {
 @media screen and (max-width: 36em) {
    
 }
+
+
 
