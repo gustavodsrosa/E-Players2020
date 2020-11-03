@@ -275,22 +275,26 @@ body {
 
 .noticias h2 {
     color: var(--white);
-    margin-top: 1em 0em;
-    margin-bottom: 2.1875em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-.noticia1 img, .noticia2 img, .noticia3 img, .noticia4 img, .noticia5 img, .noticia6 img{
+.noticia img{
     width: 14.8125em;
+    align-items: center;
+    position: relative;
+    top: -32px;
+    left: -32px
 }
 
-.noticia1 p, .noticia2 p, .noticia3 p, .noticia4 p, .noticia5 p, .noticia6 p{
+.noticia {
     width: 14.8125em;
     color: var(--white);
     padding: 2em;
     text-align: justify;
-    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-    box-shadow: 1px 1px 20px 4px #000000;
-    
+    background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
+    box-shadow: 0px 0px 10px rgb(97, 97, 97),0px 0px 30px rgb(0, 0, 0);
+    align-items: center;
 }
 
 .boxes {
@@ -309,8 +313,8 @@ body {
 .partidas-aovivo {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-    box-shadow: 1px 1px 20px 4px #000000;
+    background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
+    box-shadow: 0px 0px 10px rgb(97, 97, 97),0px 0px 30px rgb(0, 0, 0);    
     position: absolute;
     left: 950px; 
 }
