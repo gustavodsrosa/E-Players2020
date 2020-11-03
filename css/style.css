@@ -66,7 +66,7 @@ body {
 .menu a {
     color: var(--white);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-transform: uppercase;
     padding: 0.9em 0.66em;
 }
@@ -227,7 +227,7 @@ body {
     margin-left: 2em;
 }
 
-.games-aovivo, .games-embreve {
+.games-aovivo, .games-embreve, .partidas-aovivo {
     display: flex;
     align-items: center;
     font-size: 1.875em;
@@ -240,14 +240,14 @@ body {
     font-size: 1em;
 }
 
-.partida {
+.partida, .partidas-aovivo {
     width: 9.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.time1, .time2 {
+.time1, .time2, .partidas-aovivo {
     display: flex;
     /* background-color: var(--red); */
     align-items: center;
@@ -269,6 +269,8 @@ body {
 
 .noticias {
     background-color:rgb(23, 23, 27);
+    margin-bottom: 2em;
+    height: 50%;
 }
 
 .noticias h2 {
@@ -286,27 +288,180 @@ body {
     color: var(--white);
     padding: 2em;
     text-align: justify;
-    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%)
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    box-shadow: 1px 1px 20px 4px #000000;
     
 }
 
 .boxes {
     display: flex;
-    height: 50%;
+    /* height: 50%; */
     background: unset;
+    /* background-color:  aquamarine; */
+    width: 840px;
+    flex-wrap: wrap
 }
+
+
+
 
 .boxes-2 {
     display: flex;
-    height: 50%;
+    /* height: 50%; */
     background: unset;
+    /* background-color:  aquamarine; */
+    justify-content: flex-start;
 }
 
 .boxes , .boxes-2 {
-    gap: 65px;
+    gap: 50px;
 }
 
-/* Terminar parte de partidas ao vivo e rodapé */
+.partidas-aovivo {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    box-shadow: 1px 1px 20px 4px #000000;
+    position: absolute;
+    left: 950px; 
+}
+
+#proximos-jogos {
+    position: absolute;
+    top: -80px;
+    left: 10px;
+    color: var(--white);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+}
+
+.times {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.partidas1, .partidas2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 45px;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 6em;
+    margin-right: 2.5em;
+}
+
+.times {
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    gap: 45px;
+    font-size: 0.6em;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+/* Rodapé */
+
+.rodape {
+    height: 10em;
+}
+
+.menu-rodape {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-rodape ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.menu-rodape h2 {
+    color: var(--white);
+    margin-top: 2.5em;
+}
+
+.menu-rodape a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white)
+}
+
+.logo-rodape {
+    position: absolute;
+    left: 35%;
+}
+
+.about-rodape p {
+    color: var(--white);
+    margin-top: 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.cadastro-email {
+    position: absolute;
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#cadastro {
+    background-color: #8326EF;
+    color: var(--white);
+    padding-right: 5em;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 17.55px;
+    position: relative;
+    font-weight: bold;
+}   
+
+.cadastro-email a {
+    text-decoration: none;
+    background-color: var(--white);
+    color: gray;
+    padding-right: 10em;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17.55px;
+    font-weight: bold;
+}
+
+.siga-nos h2 {
+    position: relative;
+    color: var(--white);
+    top: 95px;
+}
+
+.siga-nos img {
+    position: relative;
+    top: 50px;
+    right: -150px;
+}
 
 
 
